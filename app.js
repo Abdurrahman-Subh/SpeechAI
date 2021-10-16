@@ -45,7 +45,7 @@ btn.addEventListener('click', () =>{
 
 function readOutLoud(message){
     const speech = new SpeechSynthesisUtterance();
-    speech.text = 'i couldnt understand';
+    
 
     if(message.includes('how are you')){
     const finalText = greetings[Math.floor(Math.random() * greetings.length)];
@@ -72,6 +72,20 @@ function readOutLoud(message){
     else if(message.includes('close the machine')){
         window.close();
     }
+    else if(message.includes('open Google')){
+        window.open('https://www.google.com', '_blank');
+    }
+    else if(message.includes('open Youtube')){
+        window.open('https://www.youtube.com', '_blank');
+    }
+    else if(message.includes('open Instagram')){
+        window.open('https://www.instagram.com', '_blank');
+    }
+    else{
+        speech.text = 'i couldnt understand';
+    }
+    
+    
     
     
     
