@@ -69,6 +69,9 @@ function readOutLoud(message){
         const finalText = coWorkers[Math.floor(Math.random() * coWorkers.length)]
         speech.text = finalText
     }
+    else if(message.includes('close the machine')){
+        window.close();
+    }
     
     
     
