@@ -2,8 +2,8 @@ const btn = document.querySelector('.talk')
 const content = document.querySelector('.content')
 
 const greetings = [
-    'I am good',
- 'I am good Thanks for asking'
+    'fuck you yousuf'
+ 
 ];
 
  const weather = [
